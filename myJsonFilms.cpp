@@ -52,14 +52,7 @@ void to_json(nh::json& j, const Film& val)
     j["Screenplay"] = val.info[SCREENPLAY];
     j["Characters"] = val.Characters;
 }
-/*
-FROMTXT = 1,
-        FROMJSON,
-        WRITEJSON,
-        SEARCH,
-        SHOWALLINFO,
-        SHOWFILMINFO,
-        EXIT*/
+
 void showMenu()
 {
     cout<<"Valid command format:'1' for load films from txt;"<<endl;
@@ -68,5 +61,5 @@ void showMenu()
     cout<<"                     '4' for search actor;"<<endl;
     cout<<"                     '5' for show all films info;"<<endl;
     cout<<"                     '6' for show film info;"<<endl;
-    cout<<"                     '7' 'exit' for exit."<<endl;
+    cout<<"                     '7' for exit."<<endl;
 }
